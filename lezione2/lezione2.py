@@ -229,3 +229,70 @@ del names[2]
 print (names)
 names.sort()
 names.reverse()
+
+# Use a dictionary to store information about a person you know. 
+# Store their first name, last name, age, and the city in which they live. 
+# You should have keys such as first_name, last_name, age, and city. 
+# Print each piece of information stored in your dictionary.
+
+First_name = {"Gilgamesh": "Gilgamesh", "Enkidu": "Enkidu", "Semiranis": "Semiranis"}
+Last_name = {"Gilgamesh": "Re degli Eroi", "Enkidu": "Uruk", "Semiranis": "Queen"}
+Age = {"Gilgamesh": "40", "Enkidu": "??", "Semiranis": "32"}
+City = {"Gilgamesh": "Babylon", "Enkidu": "Uruk", "Semiranis": "Ur"}
+ 
+All_Gilgamesh = First_name ["Gilgamesh"],Last_name ["Gilgamesh"], Age ["Gilgamesh"], City  ["Gilgamesh"]
+print (All_Gilgamesh)
+All_Enkidu = First_name ["Enkidu"], Last_name ["Enkidu"], Age ["Enkidu"], City  ["Enkidu"]
+print (All_Enkidu)
+All_Semiranis = First_name ["Semiranis"], Last_name ["Semiranis"], Age ["Semiranis"], City ["Semiranis"]
+print (All_Semiranis)
+
+# Use a dictionary to store people’s favorite numbers. Think of five names, and use them as keys in your dictionary. 
+# Think of a favorite number for each person, and store each as a value in your dictionary. 
+# Print each person’s name and their favorite number. 
+#`For even more fun, poll a few friends and get some actual data for your program.
+
+Numbers = {"Gilgamesh": "Infinite", "Enkidu": "1", "Semiranis": "3", "Saber": "12", "Archer": "100"}
+All_numbers = Numbers["Gilgamesh"], Numbers["Enkidu"], Numbers["Semiranis"], Numbers["Saber"], Numbers["Archer"]
+print (All_numbers)
+
+# A Python dictionary can be used to model an actual dictionary. However, to avoid confusion, let’s call it a glossary.
+#`Think of five programming words you’ve learned about in the previous chapters. Use these words as the keys in your glossary, and store their meanings as values.
+# Print each word and its meaning as neatly formatted output. 
+ # You might print the word followed by a colon and then its meaning, 
+ # or print the word on one line and then print its meaning indented on a second line.
+ # Use the newline character (\n) to insert a blank line between each word-meaning pair in your output.
+
+Word_1 = {"If": "Allows for conditional execution of a statement or group of statements based on the value of an expression."}
+Word_2 = {"Del": "Allows you to remove references to objects from a given namespace or container type"}
+Word_3 = {"Insert": "Used to add items to the list at any specified position by the user"}
+Word_4 = {"Append": "Use to add items to the end of a given list"}
+Word_5 = {"Len()": "Used to return an integer value which indicates the number of items in an object"}
+
+Lista_word: list = (Word_1, Word_2, Word_3, Word_4, Word_5)
+
+for dizionario in Lista_word:
+    for k, v in dizionario.items():
+        print (f"{k}\n{v}")
+
+
+# Start with the program you wrote for Exercise 6-1. Make two new dictionaries representing different people,
+# and store all three dictionaries in a list called people. Loop through your list of people.
+# As you loop through the list, print everything you know about each person.
+
+First_name = {"Gilgamesh": "Gilgamesh", "Enkidu": "Enkidu", "Semiranis": "Semiranis", "Saber": "Arthur", "Archer": "Emiya"}
+Last_name = {"Gilgamesh": "Re degli Eroi", "Enkidu": "Uruk", "Semiranis": "Queen", "Saber": "Pendragon", "Archer": "Shirou"}
+Age = {"Gilgamesh": "40", "Enkidu": "??", "Semiranis": "32", "Saber": "35", "Archer": "29"}
+City = {"Gilgamesh": "Babylon", "Enkidu": "Uruk", "Semiranis": "Ur", "Saber": "Camelot", "Archer": "Fuyuki"}
+ 
+All_Gilgamesh = First_name ["Gilgamesh"],Last_name ["Gilgamesh"], Age ["Gilgamesh"], City  ["Gilgamesh"]
+All_Enkidu = First_name ["Enkidu"], Last_name ["Enkidu"], Age ["Enkidu"], City  ["Enkidu"]
+All_Semiranis = First_name ["Semiranis"], Last_name ["Semiranis"], Age ["Semiranis"], City ["Semiranis"]
+All_Saber = First_name["Saber"], Last_name["Saber"], Age["Saber"], City["Saber"]
+All_Archer = first_name["Archer"], Last_name["Archer"], Age["Archer"], City["Archer"]
+
+Lista_Personaggi: list = (All_Archer, All_Enkidu, All_Gilgamesh, All_Saber, All_Semiranis)
+
+for dizionario in Lista_Personaggi:
+    for k, v in dizionario.items():
+        print (f"{k}\n{v}")

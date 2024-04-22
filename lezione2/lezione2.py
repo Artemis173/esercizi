@@ -5,7 +5,7 @@ print ("Hello World")
 # and print a message to that person. 
 # Your message should be simple , such as, 
 # "Hello Eric, would youl like to learn some python today?"
-
+#
 name: str = "Archer"
 
 print (f"Ciao {name} ti va di imparre un po di Python insieme?")

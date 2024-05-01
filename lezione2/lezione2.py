@@ -296,3 +296,65 @@ Lista_Personaggi: list = (All_Archer, All_Enkidu, All_Gilgamesh, All_Saber, All_
 for dizionario in Lista_Personaggi:
     for k, v in dizionario.items():
         print (f"{k}\n{v}")
+
+# Make several dictionaries, where each dictionary represents a different pet. In each dictionary, include 
+# the kind of animal and the owner’s name. Store these dictionaries in a list called pets. Next, loop through your 
+# list and as you do, print everything you know about each pet. 
+
+pets1 = {'pet_name':'Luna','pet_kind':'cat','pet_owner':'Elisa Somari'}
+pets2 = {'pet_name':'Rex','pet_kind':'dog','pet_owner':'Mirko Lattanzio'}
+pets3 = {'pet_name':'Kira','pet_kind':'platypus','pet_owner':'Aiko Suzuki'}
+pets4 = {'pet_name':'Pluto','pet_kind':'dog','pet_owner':'John Doe'}
+pets5 = {'pet_name':'ScoobyDoo','pet_kind':'horse','pet_owner':'Marcus Rothschild'}
+pets = [pets1,pets2, pets3, pets4, pets5]
+
+for pet in pets:
+    for k, v in pet.items():
+        print (f"{k}\n{v}")
+
+# Favorite Places: Make a dictionary called favorite_places. Think of three names to use as keys in the dictionary, 
+# and store one to three favorite places for each person. To make this exercise a bit more interesting, 
+# ask some friends to name a few of their favorite places. Loop through the dictionary, and print each person’s name 
+# and their favorite places.
+
+Places = {'Marco':['Babylon','Fuyuki'],'Saber':['Fuyuki','London'],'Enkidu':'Uruk'}
+
+for info in Places.items():
+    print(f"{k}'s favorite places are: {v}")
+
+# Favorite Numbers: Modify your program from Exercise 6-2 so each person can have more than one favorite number. 
+# Then print each person’s name along with their favorite numbers.
+
+for info in Numbers.items():
+    print(f"Here are the names of your friends and their favorite numbers: ")
+
+for info in Numbers.items():
+    print(f"{k[0]}: {k[1]}")
+    
+# Make a dictionary called cities. Use the names of three cities as keys in your dictionary. 
+# Create a dictionary of information about each city and include the country that the city is in, 
+# its approximate population, and one fact about that city. 
+# The keys for each city’s dictionary should be something like country, population, and fact. 
+# Print the name of each city and all of the information you have stored about it.
+cities = {'Rome':{'country':'Italy','population':'2.8 million','fact':'Home of the Colosseum'},
+        'Los Angeles':{'country':'California, U.S.A','population':'3.8 million','fact':'Hollywood\'s HQ'},
+        'Singapore':{'country':'Singapore','population':'5.6 million','fact':'One of the world\'s greenest cities'}
+    }
+
+for city in cities.items():
+    print(f"{city[0]} is a city located in {city[1]['country']}",
+          f"with a population of {city[1]['population']} people",
+          f"and it is {city[1]['fact']}")
+
+
+# Extensions: We’re now working with examples that are complex enough that they can be extended in any number of ways.
+# Use one of the example programs from this chapter, and extend it by adding new keys and values, 
+# changing the context of the program, or improving the formatting of the output.
+
+for info in Numbers.items():
+    info[1].append(8086)
+
+print(f"Your friends added a new favorite number: ")
+
+for info in Numbers.items():
+    print(f"{info[0]}: {info[1]}")

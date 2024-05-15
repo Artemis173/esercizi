@@ -71,6 +71,7 @@ def simulate_race():
 def simulate_rounds(num_rounds):
     hare_wins = 0
     tortoise_wins = 0
+    ties = 0
 
     for _ in range(num_rounds):
         result = simulate_race()
@@ -78,6 +79,8 @@ def simulate_rounds(num_rounds):
             hare_wins += 1
         elif result == "tortoise":
             tortoise_wins += 1
-    print(f"Hare wins: {hare_wins}, Tortoise wins: {tortoise_wins}")
+        else:
+            ties += 1
+    print(f"Hare wins: {hare_wins}, Tortoise wins: {tortoise_wins}, Ties: {ties}") 
 
-simulate_rounds(10000000000000)
+simulate_rounds(10000) 
